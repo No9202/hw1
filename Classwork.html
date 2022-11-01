@@ -6,7 +6,16 @@
     <title>My Blog</title>
 </head>
 
-<body>
+<body background="https://ts1.cn.mm.bing.net/th/id/R-C.4943ae84e4e2d641762b24fdf6f7e6fb?rik=BeTdtmw4sctUoQ&riu=http%3a%2f%2fimg.1ppt.com%2fuploads%2fallimg%2f1811%2f1_181130224118_4.JPG&ehk=XMUEn%2fzptlM3tBnLO8nsPZ7BJXM00Jg2ZtTudDEJIhg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1">
+    <a href="#bottom">去本地网页</a>
+    <br>
+    <p id="LD img">下面这张是远程图片;<a href="#local img">去本地图片</a><br></p>
+        <img src="https://ts4.cn.mm.bing.net/th?id=OIP-C.gw9m-hk1qow5ZFDqfEiqkgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+            width="150" height="160"> <br>
+        <br>
+        <a href="https://www.bilibili.com/">远程网页(哔哩哔哩弹幕网)</a> <br>
+    <p id="bottom">
+        <a href="https://no9202.github.io/web13/1.html">本地网页(1.html)</a> <br>
     <ol>
         <li>reading</li>
         <li>game
@@ -28,6 +37,9 @@
         <li>Avengers</li>
         <li>新海诚</li>
     </ul>
+    下面这张是本地图片<a id="local img" href="#LD img">去远程图片</a>
+    <br>
+    <img src="https://github.com/No9202/web13/blob/main/WARMA.jpg?raw=true" width="160" height="100">
     <form align="center">
         User name:<br>
         <input type="text" name="User name:">
@@ -46,10 +58,11 @@
         <input type="radio" name="sex" value="Male">Male
         <input type="radio" name="sex" value="Female">Female
         <br><br>
-        <input type="checkbox" name="hobby" value="sing">I like sing
-        <input type="checkbox" name="hobby" value="dance">I like dance
-        <input type="checkbox" name="hobby" value="rap">I like rap
-        <input type="checkbox" name="hobby" value="all">I like them all!
+        your hobbies:<br>
+        <input type="checkbox" name="hobby" value="sing"> sing
+        <input type="checkbox" name="hobby" value="dance"> dance
+        <input type="checkbox" name="hobby" value="rap"> rap
+        <input type="checkbox" name="hobby" value="other">other
         <br><br>
         Class:
         <select>
@@ -58,7 +71,7 @@
             <option>软件2215</option>
         </select>
         <br><br>
-              Upload your selfie  :<input type="file">
+        Upload your selfie :<input type="file">
         <br><br>
         <input type="submit" value="Submit">
     </form>
@@ -70,27 +83,41 @@
             <th>姓名</th>
             <th>性别</th>
             <th>成分</th>
+            <th colspan="2">邮箱(展示行单元格合并效果)</th>
         </tr>
         <tr>
             <td>1</td>
             <td>张三</td>
             <td>男</td>
-            <td>法外狂徒</td </tr>
+            <td>法外狂徒</td>
+            <td>1234@qw.com</td>
+            <td>5431@ew.com</td>
         <tr>
             <td>2</td>
             <td>左旋溜达鸡</td>
             <td>?</td>
             <td>左旋完直接瘦死</td>
+            <td>5432@ds.com</td>
+            <td>7831@cb.com</td>
         </tr>
         <tr>
             <td>3</td>
             <td>ikun琛</td>
             <td>男</td>
             <td>喜欢在这理发店</td>
+            <td>7653@da.com</td>
+            <td>8532@ok.com</td>
+        </tr>
+        <tr>
+            <th rowspan="2">备注</th>
+            <td colspan="5">1.以上人物均为虚构,如有雷同,纯属巧合</td>
+        </tr>
+        <tr>
+            <td colspan="5">2.展示列单元格合并效果</td>
         </tr>
 
     </table>
-    
+
 </body>
 
 </html>
